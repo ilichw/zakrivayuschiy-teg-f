@@ -2,8 +2,14 @@
 
 :root {
   --main-font: Inter, sans-serif;
+  --main-font-size: 1.125rem;
   --main-font-weight: 410;
   --main-font-heading-weight: 715;
   --accent-font: PressStart2P, monospace;
+  --accent-font-size: 0.875rem;
   --accent-font-weight: 400;
+
+  --block-bg-color: #fff;
+  --block-color: #000;
+  --block-border: 2px solid currentColor;
 }

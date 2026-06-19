@@ -13,15 +13,91 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+
   font-family: var(--main-font);
+  font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
+
+  background-image:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
 .header {
+  margin-block: 100px 94px;
+  padding-block: 8.125rem;
+
   font-family: var(--accent-font);
+  font-weight: var(--accent-font-weight);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.block {
+  max-inline-size: 700px;
+  margin-inline: auto;
+
+  background-color: var(--block-bg-color);
+  color: var(--block-color);
+  border: var(--block-border);
+}
+
+.header__logo {
+  margin-block-end: 1.25rem;
+  font-size: 4.0625rem;
+}
+
+.header__title {
+  font-size: 1.4375rem;
   font-weight: var(--accent-font-weight);
 }
 
 .card__title {
+  padding: 4px 10px;
+  font-size: var(--main-font-size);
   font-weight: var(--main-font-heading-weight);
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+}
+
+.card__content {
+  padding: 25px;
+}
+
+.card__text-content,
+.card__text-content p:not(:last-child) {
+  margin-block-end: 25px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+}
+
+.button {
+  border-radius: 0;
+
+  font-family: var(--accent-font);
+  font-size: var(--accent-font-size);
+
+  background-color: var(--block-bg-color);
+  color: inherit;
+  border: var(--block-border);
+}
+
+.card__icon-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  min-inline-size: 130px;
+  padding-block: 11px;
 }

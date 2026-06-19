@@ -19,32 +19,37 @@
   </head>
 
   <body class="page">
-    <header class="header">
-      <div>&lt;/HTML&gt;</div>
-      <h1>Закрывающий тег</h1>
+    <header class="header block">
+      <div class="header__logo">&lt;/HTML&gt;</div>
+
+      <h1 class="header__title">
+        Закрывающий тег
+      </h1>
     </header>
 
     <main>
-      <article>
+      <article class="block">
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
 
-        <img src="./images/car.jpg" alt="Автомобиль (дом на колесах) на фоне ночного неба в стиле pixel art">
+        <img class="card__image" src="./images/car.jpg" alt="Автомобиль (дом на колесах) на фоне ночного неба в стиле pixel art">
 
-        <div>
-          <p>
-            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
-          </p>
-          <p>
-            Место для ваших воспоминаний о начале обучения.
-          </p>
+        <div class="card__content">
+          <div class="card__text-content">
+            <p>
+              Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+            </p>
+            <p>
+              Место для ваших воспоминаний о начале обучения.
+            </p>
+          </div>
 
-          <div>
-            <button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
               <img src="./svg/heart.svg" alt=""> 
             </button>
-            <button>
+            <button class="button card__like-button">
               Like
             </button>
           </div>
