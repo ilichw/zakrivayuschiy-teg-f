@@ -13,4 +13,15 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+}
+
+.header {
+  font-family: var(--accent-font);
+  font-weight: var(--accent-font-weight);
+}
+
+.card__title {
+  font-weight: var(--main-font-heading-weight);
 }
