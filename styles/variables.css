@@ -12,4 +12,5 @@
   --block-bg-color: #fff;
   --block-color: #000;
   --block-border: 2px solid currentColor;
+  --text-stroke-color: rgb(255 255 255 / 0.55);
 }
