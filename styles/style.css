@@ -25,7 +25,7 @@
 }
 
 .header {
-  margin-block: 100px 98px;
+  margin-block: 100px 94px;
   padding-block: 8.125rem;
 
   font-family: var(--accent-font);
@@ -50,6 +50,14 @@
 .header__title {
   font-size: 1.4375rem;
   font-weight: var(--accent-font-weight);
+}
+
+.main {
+  margin-block-end: 100px;
+}
+
+.card {
+  margin-block-end: 50px;
 }
 
 .card__title {
@@ -128,4 +136,13 @@
 .card__like-button {
   min-inline-size: 130px;
   padding-block: 11px;
+}
+
+.save-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-inline-size: 335px;
+  margin-inline: auto;
+  padding: 15px 18px;
 }
