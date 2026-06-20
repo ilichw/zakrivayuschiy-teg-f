@@ -59,11 +59,23 @@
         </div>
       </article>
 
-      <button class="button save-button">
+      <button class="button save-button" onclick="window['save-dialog'].showModal()">
         <img width="21" height="21" src="./svg/floppy.svg" alt="">
         <span>Сохранить на память</span>
       </button>
     </main>
+
+    <dialog class="dialog" id="save-dialog">
+      <img width="39" height="39" src="./svg/floppy.svg">
+
+      <span>
+        Вставьте дискету, чтобы продолжить
+      </span>
+
+      <button class="button dialog__ok-button" onclick="window['save-dialog'].close()">
+        Ok
+      </button>
+    </dialog>
 
     <script src="./scripts/like.js"></script>
   </body>
