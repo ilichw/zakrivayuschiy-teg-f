@@ -149,6 +149,11 @@
   padding: 15px 18px;
 }
 
+.save-button__icon {
+  inline-size: 28px;
+  block-size: 28px;
+}
+
 .dialog[open] {
   display: grid;
   grid-template-columns: 39px 1fr;
@@ -174,4 +179,36 @@
   place-self: stretch;
   text-transform: uppercase;
   padding-block: 0.75rem;
+}
+
+@media (width <= 375px) {
+  .header {
+    margin-block-end: 100px;
+    padding-block: 120px;
+  }
+
+  .header__logo {
+    font-size: 49px;
+  }
+
+  .header__title {
+    font-size: 14px;
+  }
+
+  .card__title {
+    line-height: 1.25;
+  }
+
+  .save-button {
+    flex-direction: column;
+  }
+
+  .save-button__icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .dialog[open] {
+    padding: 30px 40px;
+  }
 }
