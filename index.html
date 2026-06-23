@@ -71,8 +71,10 @@
       </article>
 
       <button class="button save-button" onclick="window['save-dialog'].showModal()">
-        <img class="save-button__icon" src="./svg/floppy.svg" alt="">
-        <span>Сохранить на память</span>
+        <svg class="save-button__icon" viewbox="0 0 28 28">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
       </button>
     </main>
 
@@ -84,7 +86,9 @@
       </span>
 
       <button class="button dialog__ok-button" onclick="window['save-dialog'].close()">
-        Ok
+        <span class="button__text">
+          Ok
+        </span>
       </button>
     </dialog>
 

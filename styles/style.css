@@ -119,6 +119,7 @@
 }
 
 .button {
+  position: relative;
   border-radius: 0;
 
   font-family: var(--accent-font);
@@ -139,6 +140,27 @@
 .button:focus-visible {
   /* box-shadow: 2px 2px 0 var(--accent-color); */
   box-shadow: 2px 2px 0 #000;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .card__icon-button {
@@ -175,7 +197,8 @@
 
 .save-button__icon {
   inline-size: 28px;
-  block-size: 28px;
+  mix-blend-mode: difference;
+  fill: #fff;
 }
 
 .dialog[open] {
