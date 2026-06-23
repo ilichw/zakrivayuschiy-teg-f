@@ -127,6 +127,18 @@
   background-color: var(--block-bg-color);
   color: inherit;
   border: var(--block-border);
+
+  transition: box-shadow 0.3s;
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: none;
+}
+
+.button:focus-visible {
+  /* box-shadow: 2px 2px 0 var(--accent-color); */
+  box-shadow: 2px 2px 0 #000;
 }
 
 .card__icon-button {
