@@ -221,6 +221,11 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
+.dialog__icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
 .dialog__ok-button {
   grid-column: 1 / -1;
   place-self: stretch;
