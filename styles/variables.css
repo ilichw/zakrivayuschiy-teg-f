@@ -8,7 +8,7 @@
   --main-font-heading-weight: 715;
 
   /* accent font */
-  --accent-font: PressStart2P, monospace;
+  --accent-font: PressStart2P, fantasy;
   --accent-font-size: 0.875rem;
   --accent-font-weight: 400;
 
@@ -16,7 +16,7 @@
   --bg-color: #fff;
   --text-color: #000;
   --block-border: 2px solid currentColor;
-  --text-stroke-color: rgb(255 255 255 / 0.55);
+  --text-stroke-color: var(--bg-color);
   --animation-contour-color: #000;
   --animation-fill-color: #f00;
 }

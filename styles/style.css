@@ -144,7 +144,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
 }
 
 .button {
@@ -224,7 +224,7 @@
 }
 
 .save-button__icon {
-  inline-size: 28px;
+  inline-size: 21px;
   mix-blend-mode: difference;
   fill: var(--bg-color);
 }
@@ -276,7 +276,6 @@
 
   .save-button__icon {
     inline-size: 28px;
-    block-size: 28px;
   }
 
   .dialog[open] {
